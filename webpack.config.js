@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-var root = path.join(process.cwd(), 'src');
 
 module.exports = {
   entry: [
@@ -22,6 +21,25 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader?importLoaders=1'
+        ]
+      },
+      {
+        test: /\.sass$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.(eot|png|ttf|svg|woff|woff2)$/,
+        loader: 'url-loader'
       }
     ]
   },

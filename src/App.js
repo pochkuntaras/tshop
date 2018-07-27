@@ -1,14 +1,13 @@
 import React from 'react';
-import { sum, square } from './math';
-import Hello from './Hello'
-import CashVoutcher from './CashVoucher';
+import Catalog from './components/Catalog';
+import CashVoucher from './components/CashVoucher';
+import products from './constants/Products';
 
 const App = () => (
-    <div>
-        <Hello />
-        <p>{`sum 3 + 5 = ${sum(3, 5)} and square of 2 = ${square(2)}`}</p>
-        <CashVoutcher />
-    </div>
-)
+  <div>
+    <CashVoucher lineItems={products} />
+    <Catalog products={products} />
+  </div>
+);
 
 export default App;

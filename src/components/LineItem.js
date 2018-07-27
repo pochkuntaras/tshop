@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LineItem = ({id, name, price, deleteFunc}) => (
+const LineItem = ({ id, title, price, deleteFunc }) => (
   <div className="line-item">
     <span className="line-item__id">{id}</span>
     &nbsp;|&nbsp;
     <span className="line-item__price">{price} USD</span>
     &nbsp;|&nbsp;
-    <a href="#" title={`Delete ${name}`} onClick={deleteFunc}>
+    <a href="#" title={`Delete ${title}`} onClick={deleteFunc}>
       Delete
     </a>
     &nbsp;|&nbsp;
-    <span className="line-item__name">{name}</span>
+    <span className="line-item__title">{title}</span>
   </div>
 );
 
 LineItem.propTypes = {
   id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   deleteFunc: PropTypes.func.isRequired
 };

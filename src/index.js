@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { AppContainer } from 'react-hot-loader';
 
+require('normalize.css');
+require('./stylesheets/application.sass');
+
 ReactDOM.render(
   <AppContainer>
     <App />
@@ -20,5 +23,5 @@ if (module.hot) {
       </AppContainer>,
       document.getElementById('root')
     );
-  })
+  });
 }
