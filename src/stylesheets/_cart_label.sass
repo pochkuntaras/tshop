@@ -1,0 +1,44 @@
+.cart-label
+  display: block
+  position: fixed
+  top: 100px
+  right: 0
+  text-transform: uppercase
+  text-decoration: none
+  background-color: $fusi-university
+  border-radius: 8px 0 0 8px
+  padding: 5px 10px 5px 15px
+  color: white
+  cursor: pointer
+  z-index: 3
+
+  &:hover,
+  &:focus
+    outline: none
+    background-color: $red
+
+  &:visited,
+  &:hover
+    color: white
+
+  &:hover
+  &__info
+    display: block
+
+  &__icon
+    display: inline-block
+    height: 28px
+    margin: 4px
+    fill: white
+    vertical-align: middle
+
+  &__total-quantity
+    padding: 0 4px
+    color: white
+    background-color: #fb3f4c
+    line-height: normal
+    border-radius: 20px
+    position: absolute
+    top: 2px
+    left: 36px
+    font-size: 10px

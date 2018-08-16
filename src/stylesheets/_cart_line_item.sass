@@ -1,0 +1,31 @@
+.cart-line-item
+  display: block
+  position: relative
+  margin-bottom: 10px
+
+  &:hover &__info,
+  &__info:focus
+    color: $brilliant-yellow
+    background: $red
+
+  &__info
+    display: block
+    height: 40px
+    border: 1px solid $fusi-university
+    margin: 0 4px
+    text-decoration: none
+    vertical-align: middle
+    background-color: $fusi-university
+    color: white
+    transition: all .3s linear
+
+    &:focus
+      outline: none
+
+  &__cover
+    vertical-align: middle
+
+  &__about
+    display: inline-block
+    vertical-align: middle
+    margin-left: 5px

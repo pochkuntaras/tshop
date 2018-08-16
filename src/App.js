@@ -1,11 +1,13 @@
 import React from 'react';
 import Catalog from './components/Catalog';
-import CashVoucher from './components/CashVoucher';
+import CartLabel from './components/CartLabel';
+import Cart from './components/Cart';
 import products from './constants/Products';
 
 const App = () => (
-  <div>
-    <CashVoucher lineItems={products} />
+  <div style={{position: 'relative'}}>
+    <CartLabel quantity={3} />
+    <Cart />
     <Catalog products={products} />
   </div>
 );

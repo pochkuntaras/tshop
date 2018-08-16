@@ -1,0 +1,31 @@
+$orange: #eaa356
+$orange-bright: #ffc880
+
+.cart
+  width: 450px
+  padding: 10px
+  border: 1px solid $fusi-university
+  background-color: $pink
+  position: fixed
+  top: 180px
+  right: 10px
+  z-index: 3
+
+  &__content
+    max-height: 260px
+    margin-bottom: 10px
+    overflow-y: auto
+
+  &__message
+    padding: 10px
+    font-size: 14px
+    color: black
+    background: $orange linear-gradient(to right, $orange 0%, $orange-bright 50%, $orange 100%, $orange-bright 0%)
+    text-shadow: 0 0 1px #a6815c
+    text-align: center
+
+  &__total-price
+    border-top: 1px solid $fusi-university
+    margin: 10px 0
+    padding: 10px 0
+    font: bold 22px Arial

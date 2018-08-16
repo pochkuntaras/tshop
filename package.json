@@ -41,6 +41,7 @@
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-inlinesvg": "^0.8.1",
     "url-loader": "^1.0.1"
   }
 }
